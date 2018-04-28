@@ -33,7 +33,5 @@ params["_group", "_targetedUnits", ["_count", 0]];
         [_group, _targetedUnits] call FUNC(resetAI);
     };
 
-    _count = _count + 1;
-
-    [_group, _targetedUnits, _count] call FUNC(waitForTime);
+    [_group, _targetedUnits, _count + 1] call FUNC(waitForTime);
 }, 10, [_group, _count, _targetedUnits]] call CFUNC(wait);

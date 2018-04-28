@@ -17,7 +17,7 @@ class CfgPatches {
 #include "CfgCLibModules.hpp"
 
 class CfgCLibSettings {
-	rbu_cfg[] = {"CfgRBU"};
+    rbu_cfg[] = {"CfgRBU"};
 };
 
 class CfgRBU {

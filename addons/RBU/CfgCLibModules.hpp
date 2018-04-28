@@ -1,7 +1,7 @@
 #include "\tc\CLib\addons\CLib\ModuleMacros.hpp"
 
 class CfgCLibModules {
-    class BSO {
+    class RBU {
         path = "\tc\RBU\addons\RBU";
         dependency[] = {"CLib"};
         MODULE(RBU) {
