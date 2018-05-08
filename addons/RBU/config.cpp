@@ -26,6 +26,6 @@ class CfgRBU {
     waypointsCount = 3;
     searchRadius = 100;
     aiMode = "RED";
-    walkTime = 10;
+    walkCycles = 10;
     maxRunning = 3;
 };

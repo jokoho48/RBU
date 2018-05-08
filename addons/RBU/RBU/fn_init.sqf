@@ -32,9 +32,9 @@
     GVAR(waypointCount) = [CFGRBU(waypointsCount), 3] call CFUNC(getSetting);
     GVAR(searchRad) = [CFGRBU(searchRadius), 100] call CFUNC(getSetting);
     GVAR(aiMode) =  [CFGRBU(aiMode), "YELLOW"] call CFUNC(getSetting);
-    if (GVAR(aiMode) == "" && GVAR(aiMode) in ["MOVE","DESTROY","GETIN","SAD","JOIN","LEADER","GETOUT","CYCLE","LOAD","UNLOAD","TR UNLOAD","HOLD","SENTRY","GUARD","TALK","SCRIPTED","SUPPORT","GETIN NEAREST","DISMISS","LOITER","AND","OR"]) then {
+    if (GVAR(aiMode) == "" || !(GVAR(aiMode) in ["MOVE","DESTROY","GETIN","SAD","JOIN","LEADER","GETOUT","CYCLE","LOAD","UNLOAD","TR UNLOAD","HOLD","SENTRY","GUARD","TALK","SCRIPTED","SUPPORT","GETIN NEAREST","DISMISS","LOITER","AND","OR"])) then {
         GVAR(aiMode) = "YELLOW";
     };
-    GVAR(walkTime) = [CFGRBU(walkTime), 300] call CFUNC(getSetting);
-    GVAR(areRunningMax) =  [CFGRBU(maxRunning), 3] call CFUNC(getSetting);
+    GVAR(walkCycles) = [CFGRBU(walkCycles), 300] call CFUNC(getSetting);
+    GVAR(areRunningMax) = [CFGRBU(maxRunning), 3] call CFUNC(getSetting);
 }] call CFUNC(addEventhandler);
