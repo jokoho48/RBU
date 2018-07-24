@@ -17,6 +17,6 @@
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 
-#define ISDEV
+// #define ISDEV
 
 #include "\tc\CLib\addons\CLib\macros.hpp"
