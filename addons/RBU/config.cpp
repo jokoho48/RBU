@@ -1,6 +1,6 @@
 #include "macros.hpp"
 class CfgPatches {
-    class ModName {
+    class RBU {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.82;
